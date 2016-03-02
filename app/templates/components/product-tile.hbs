@@ -1,6 +1,11 @@
-{{product.title}}
-{{product.image}}
-{{product.description}}
-{{product.cost}}
+<div class="col-md-4 product-tile" style="background-image:url({{product.image}})">
+  <h1>{{product.name}}</h1>
+  <div class="product-description">
+    Description: {{product.description}}<br>
+    Price: {{product.price}}
+  </div>
+  <div class="cart-button">
+    <button class="btn btn-primary" {{action 'addCart' product}}>Add to Cart</button>
+  </div>
 
-<button {{action 'add' product}}>Add to Cart</button>
+</div>

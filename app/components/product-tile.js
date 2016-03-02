@@ -4,8 +4,13 @@ export default Ember.Component.extend({
 shoppingCart: Ember.inject.service(),
 
   actions: {
-    add(item) {
-      this.get('cart').add(item);
+    addCart(item) {
+      this.get('addCart').add(item);
     },
-  }
+  },
+
+  imageUrl: Ember.computed('imageUrl', function(product) {
+
+    return product.image;
+  }),
 });

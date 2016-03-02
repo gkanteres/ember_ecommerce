@@ -6,5 +6,5 @@ export default DS.Model.extend({
   description: DS.attr(),
   price: DS.attr(),
   brand: DS.attr(),
-  subcategory: DS.belongsTo('subcategory', {async: true})
+  category: DS.belongsTo('category', {async: true})
 });

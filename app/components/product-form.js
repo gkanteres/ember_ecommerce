@@ -8,7 +8,6 @@ export default Ember.Component.extend({
         description: this.get('description'),
         price: this.get('price'),
         brand: this.get('brand'),
-        subcategory: this.get('subcategory'),
         image: this.get('image')
       };
       this.sendAction('saveProduct', params);

@@ -6,8 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('store');
   this.route('admin');
+  this.route('tile');
+  this.route('stone');
+  this.route('wood');
+  this.route('laminate');
 });
 
 export default Router;
