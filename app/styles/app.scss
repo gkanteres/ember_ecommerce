@@ -1,27 +1,33 @@
+body {
+  background-color: #ffeee0;
+}
+
 .masthead{
   height: 220px;
   background-image:url("/assets/images/header.jpg");
   background-repeat:no-repeat;
   background-size: cover;
-  font-size: 7em;
   a {
-    color: #3dbeff;
+    color: #ffda61;
     text-decoration: none;
-    margin-left: 5%;
+    top: 100px;
+    right: 20px;
+    position: absolute;
+    font-size: 650%
   }
   a:hover {
-    color: #c2ebff;
+    color: #fff2c7;
   }
 }
 
 .navbar {
   background: linear-gradient(#6f1109, #d13125);
   border-color: #6f1109;
-  #navbar-link {
-    color: #3dbeff;
+  .navbar-link {
+    color: #ffda61 !important;
   }
-  #navbar-link:hover {
-    color: #c2ebff;
+  .navbar-link:hover {
+    color: #fff2c7 !important;
   }
 }
 

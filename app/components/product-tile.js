@@ -1,16 +1,14 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-shoppingCart: Ember.inject.service(),
+  shoppingCart: Ember.inject.service(),
 
   actions: {
-    addCart(item) {
-      this.get('addCart').add(item);
+    add(item) {
+      this.get('shoppingCart').add(item);
+      console.log(JSON.stringify(this.get('shoppingCart')));
     },
   },
 
-  imageUrl: Ember.computed('imageUrl', function(product) {
 
-    return product.image;
-  }),
 });

@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('stone');
   this.route('wood');
   this.route('laminate');
+  this.route('cart');
 });
 
 export default Router;
