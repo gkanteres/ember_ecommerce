@@ -5,7 +5,6 @@ export default Ember.Service.extend({
 
   add(item) {
     this.get('items').pushObject(item);
-    console.log("items after pushObject: " + JSON.stringify(this.get('items')));
 
   },
 });

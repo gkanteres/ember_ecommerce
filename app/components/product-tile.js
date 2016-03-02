@@ -6,9 +6,12 @@ export default Ember.Component.extend({
   actions: {
     add(item) {
       this.get('shoppingCart').add(item);
-      console.log(JSON.stringify(this.get('shoppingCart')));
+      this.sendAction('goToCart');
     },
+
   },
+
+
 
 
 });
