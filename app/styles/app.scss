@@ -5,13 +5,24 @@
   background-size: cover;
   font-size: 7em;
   a {
-    color: white;
-    margin-left: 10%;
+    color: #3dbeff;
+    text-decoration: none;
+    margin-left: 5%;
+  }
+  a:hover {
+    color: #c2ebff;
   }
 }
 
 .navbar {
-
+  background: linear-gradient(#6f1109, #d13125);
+  border-color: #6f1109;
+  #navbar-link {
+    color: #3dbeff;
+  }
+  #navbar-link:hover {
+    color: #c2ebff;
+  }
 }
 
 .product-tile {
