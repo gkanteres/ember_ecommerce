@@ -13,6 +13,8 @@ export default Ember.Component.extend({
       this.get('shoppingCart').remove(item);
       this.sendAction('goToCart');
     },
+
+    
   },
 
 });

@@ -11,4 +11,6 @@ export default Ember.Route.extend({
       this.transitionTo('cart');
     }
   }
+
+  
 });
