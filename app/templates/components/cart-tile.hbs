@@ -1,11 +1,29 @@
-<div class="col-md-4 product-tile" style="background-image:url({{item.image}})">
-  <h1>{{item.name}}</h1>
-  <div class="product-description">
-    Description: {{item.description}}<br>
-    Price: {{item.price}}
+<div class="">
+
+</div>
+<div class="col-md-4 cart-tile">
+  <div class="col-xs-3">
+    <img class="cart-image" src="{{item.image}}" />
   </div>
-  <div class="cart-button">
-    <button class="btn btn-primary" {{action 'remove' item}}>Remove from Cart</button>
+  <div class="col-xs-7 product-description">
+    <div class="">
+      <h1>{{item.name}}</h1>
+      <p>
+        {{item.description}}
+      </p>
+    </div>
   </div>
+  <div class="col-xs-2">
+    <div class="cart-price">
+      Price: ${{item.price}}
+    </div>
+
+    <div class="in-cart-button">
+      <button class="btn btn-primary" {{action 'remove' item}}>Remove from Cart</button>
+    </div>
+  </div>
+
+
+
 
 </div>
