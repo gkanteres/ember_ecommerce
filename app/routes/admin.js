@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     saveProduct(params) {
       var newProduct = this.store.createRecord('product', params);
       newProduct.save();
-      this.transitionTo('admin');
+      this.transitionTo('index');
     },
   }
 });
