@@ -8,7 +8,7 @@ export function cartTotal(params) {
     total += parseInt(replacedString);
 
   }
-  return total;
+  return parseInt(total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")).toFixed(2);
 }
 
 export default Ember.Helper.helper(cartTotal);

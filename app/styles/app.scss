@@ -107,6 +107,32 @@ body, html {
   margin-top: 15px;
 }
 
+.float-left {
+  float: left;
+}
+
+.qty-group {
+  float: right;
+  width: 200px;
+  height: 0px;
+  .product-qty {
+    height: 36px;
+  }
+}
+
+.cart-total {
+  float: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  display: block;
+  width: 20%;
+  text-align: center;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
 p {
   font-family: 'Cuprum', sans-serif;
 }
