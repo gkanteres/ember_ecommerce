@@ -1,5 +1,6 @@
-body {
+body, html {
   background-color: #ffeee0;
+  height: 100%;
 }
 
 .masthead{
@@ -10,11 +11,14 @@ body {
   a {
     color: #ffda61;
     text-decoration: none;
-    top: 100px;
+    top: 80px;
     right: 20px;
     position: absolute;
-    font-size: 650%
+    font-size: 650%;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 2px black;
   }
+
   a:hover {
     color: #fff2c7;
   }
@@ -22,12 +26,19 @@ body {
 
 .navbar {
   background: linear-gradient(#6f1109, #d13125);
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 17px 0;
   border-color: #6f1109;
   .navbar-link {
     color: #ffda61 !important;
   }
   .navbar-link:hover {
     color: #fff2c7 !important;
+  }
+  .glyphicon {
+    font-size: 16px;
   }
 }
 
@@ -48,7 +59,7 @@ body {
     padding: 10px;
     color: white;
     background-color: rgba(0,0,0,0.2);
-    font-family: 'Vollkorn', serif;
+    font-family: 'Cuprum', sans-serif;
   }
 
   .add-cart-button {
@@ -67,30 +78,81 @@ body {
   padding: 10px;
   border-radius: 20px;
   margin-top: 10px;
+
   .cart-image {
     height: 150px;
     width: 150px;
-    vertical-align: middle;
+    margin-top: 9px;
   }
-  .product-description {
-    margin: -40;
-  }
+
   .cart-price {
-    font-size: 20px;
+    font-size: 16px;
     position: absolute;
     top: 42px;
-    left: 40px;
+    left: 30px;
   }
+
   .in-cart-button {
     position: absolute;
     top: 80px;
   }
 
-  // .in-cart-button {
-  //   position: absolute;
-  //   height: 25%;
-  //   bottom: -24px;
-  //   right: -175px;
-  //   padding: 10px;
-  // }
+}
+
+.modal-picture > img {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+p {
+  font-family: 'Cuprum', sans-serif;
+}
+h1 {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 700;
+  line-height: 51px;
+  font-size: 46px;
+  text-transform: uppercase;
+  margin: 23px 0 23px 0;
+}
+h2 {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 29px;
+  margin: 23px 0 23px 0;
+}
+h3 {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 17px 0 19px 0;
+}
+h4 {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 17px 0;
+}
+
+.btn {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+footer {
+  height: 100px;
+  width:100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
 }
