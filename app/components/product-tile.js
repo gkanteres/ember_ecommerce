@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 
   actions: {
     add(item) {
-      this.get('shoppingCart').add(item);
+      this.get('shoppingCart').add(item, this.get('productQuantity'));
       this.sendAction('goToCart');
     },
 
@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       this.sendAction('goToCart');
     },
 
-    
+
   },
 
 });

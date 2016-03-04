@@ -1,13 +1,14 @@
 <div class="cart-total">
   {{# if (gt shoppingCart.items.length 0)}}
-    <h2>Cart Total: ${{cart-total shoppingCart.items}}</h2>
+    <h2>{{purchaseTotal}}</h2>
+
   {{else}}
     <h2>Cart Total: $0.00</h2>
   {{/ if}}
 </div>
 
 <div id="cart">
-  {{#each shoppingCart.items as |item|}}
-    {{cart-tile item=item shoppingCart=shoppingCart}}
+  {{#each shoppingCart.items as |purchase|}}
+    {{cart-tile purchase=purchase shoppingCart=shoppingCart}}
   {{/each}}
 </div>

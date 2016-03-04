@@ -3,19 +3,24 @@
 </div>
 <div class="col-md-4 cart-tile">
   <div class="col-xs-3">
-    <img class="cart-image" src="{{item.image}}" />
+    <img class="cart-image" src="{{purchase.item.image}}" />
   </div>
   <div class="col-xs-7 product-description">
     <div class="">
-      <h1>{{item.name}}</h1>
+      <h1>{{purchase.item.name}}</h1>
       <p>
-        {{item.description}}
+        {{purchase.item.description}}
       </p>
     </div>
   </div>
   <div class="col-xs-2">
+    <div class="purchase-qty">
+      Quantity: {{purchase.quantity}}
+      Total Price: {{purchaseTotal}}
+    </div>
     <div class="cart-price">
-      Price: {{item.price}}
+      Unit Price: {{purchase.item.price}}/each
+
     </div>
 
     <div class="in-cart-button">
